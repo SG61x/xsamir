@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-background pt-16 md:pt-0">
+      <section className="relative w-full min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24 pb-12 md:pt-0 md:pb-0">
         {/* Advanced Animated Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-glow"></div>
@@ -22,24 +22,24 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Text Content */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 order-2 lg:order-1 animate-slide-up">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:space-y-8 order-2 lg:order-1 animate-slide-up">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-md">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
                 Available for new projects
               </div>
 
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight">
                 Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Digital</span> <br className="hidden lg:block" />
                 Experiences
               </h1>
 
-              <p className="text-xl text-muted-foreground max-w-[600px] leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-[500px] lg:max-w-[600px] leading-relaxed">
                 I'm <span className="font-semibold text-foreground">Samir Gaihre</span> (xSamir). I build high-performance, accessible, and beautiful web applications using modern technologies.
               </p>
 
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
                 <Link
                   href="/projects"
                   className="inline-flex h-12 items-center justify-center rounded-full bg-foreground px-8 text-sm font-medium text-background shadow transition-transform hover:scale-105 hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
@@ -56,8 +56,8 @@ export default function Home() {
             </div>
 
             {/* Visual/Profile Area */}
-            <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in relative">
-              <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in relative mb-8 lg:mb-0">
+              <div className="relative w-[240px] h-[240px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px]">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-[2rem] rotate-6 opacity-20 blur-2xl"></div>
                 <div className="absolute -inset-4 border border-primary/20 rounded-[2.5rem] rotate-3"></div>
@@ -72,19 +72,6 @@ export default function Home() {
                     priority
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-
-                  {/* Floating Badge */}
-                  <div className="absolute bottom-6 left-6 right-6 p-4 bg-background/80 backdrop-blur-md rounded-xl border border-white/10 shadow-lg transform translate-y-2 opacity-0 animate-reveal" style={{ animationDelay: "0.5s" }}>
-                    <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Download className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Role</p>
-                        <p className="text-sm font-bold">Full Stack Developer</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
