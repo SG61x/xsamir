@@ -3,6 +3,13 @@ import Image from "next/image"
 import { SectionWrapper } from "@/components/section-wrapper"
 import projects from "@/lib/projects.json"
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Showcase — xSamir",
+    description: "A visual gallery of my creative work, designs, and experiments.",
+}
+
 export default function ShowcasePage() {
     return (
         <div className="flex flex-col min-h-screen pt-20">

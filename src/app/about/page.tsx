@@ -23,6 +23,17 @@ const skillCategories: SkillCategory[] = [
     }
 ]
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "About Me — xSamir",
+    description: "Learn more about Samir Gaihre (xSamir), a versatile developer specializing in Automation, Web Infrastructure, and efficient digital ecosystems.",
+    openGraph: {
+        title: "About Me — xSamir",
+        description: "Learn more about Samir Gaihre (xSamir) - Automation & Web Infrastructure Expert.",
+    }
+}
+
 export default function AboutPage() {
     return (
         <div className="flex flex-col min-h-screen">

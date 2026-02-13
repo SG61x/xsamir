@@ -2,6 +2,13 @@ import { ProjectCard } from "@/components/project-card"
 import { SectionWrapper } from "@/components/section-wrapper"
 import projects from "@/lib/projects.json"
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Projects — xSamir",
+    description: "Explore my portfolio of projects, ranging from Telegram automation bots to high-performance web applications.",
+}
+
 export default function ProjectsPage() {
     return (
         <div className="flex flex-col min-h-screen pt-20">

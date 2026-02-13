@@ -3,6 +3,13 @@ import { SectionWrapper } from "@/components/section-wrapper"
 import { Github, Send, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Contact — xSamir",
+    description: "Get in touch with Samir Gaihre for collaboration, project inquiries, or just to say hi.",
+}
+
 export default function ContactPage() {
     return (
         <div className="flex flex-col min-h-screen pt-20">
