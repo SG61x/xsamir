@@ -10,14 +10,11 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Samir Gaihre — xSamir Portfolio",
+  title: "xSamir — Samir Gaihre",
   description: "Technology enthusiast and developer building clean and creative projects.",
   metadataBase: new URL("https://xsamir.com"),
-  twitter: {
-    card: "summary_large_image",
-  },
   openGraph: {
-    title: "Samir Gaihre — xSamir Portfolio",
+    title: "xSamir — Samir Gaihre",
     description: "Technology enthusiast and developer building clean and creative projects.",
     url: "https://xsamir.com",
     siteName: "xSamir Portfolio",

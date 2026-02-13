@@ -10,11 +10,17 @@ export function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="rounded-full p-2 hover:bg-accent hover:text-accent-foreground transition-colors relative"
+            className="relative rounded-full p-2 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             aria-label="Toggle theme"
         >
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute top-2 left-2 h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <div className="relative h-[1.2rem] w-[1.2rem] overflow-hidden">
+                <div className="absolute inset-0 transform transition-transform duration-500 ease-in-out dark:-rotate-90 dark:opacity-0">
+                    <Sun className="h-full w-full" />
+                </div>
+                <div className="absolute inset-0 transform transition-transform duration-500 ease-in-out rotate-90 opacity-0 dark:rotate-0 dark:opacity-100">
+                    <Moon className="h-full w-full" />
+                </div>
+            </div>
             <span className="sr-only">Toggle theme</span>
         </button>
     )

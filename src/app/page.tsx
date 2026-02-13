@@ -12,49 +12,81 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
-        {/* Animated Background */}
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-background pt-16 md:pt-0">
+        {/* Advanced Animated Background */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-          <div className="absolute top-0 left-0 right-0 h-[500px] bg-primary/10 blur-[120px] rounded-full mix-blend-screen opacity-50 animate-pulse"></div>
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-secondary/20 blur-[120px] rounded-full mix-blend-screen opacity-30"></div>
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-glow"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-secondary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-glow" style={{ animationDelay: "2s" }}></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-purple-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-glow" style={{ animationDelay: "4s" }}></div>
+          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 brightness-100 contrast-150 mix-blend-overlay"></div>
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="flex flex-col items-center text-center space-y-8">
-            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl animate-fade-in">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary opacity-20" />
-              <Image
-                src="/assets/SamirIcon.jpg"
-                alt="Samir Gaihre"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+            {/* Text Content */}
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 order-2 lg:order-1 animate-slide-up">
+              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-md">
+                <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                Available for new projects
+              </div>
 
-            <div className="space-y-4 max-w-3xl animate-slide-up">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-foreground via-primary to-foreground bg-[length:200%_auto] animate-gradient">
-                Hi, I'm Samir Gaihre
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Digital</span> <br className="hidden lg:block" />
+                Experiences
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-[600px] mx-auto">
-                I love technology — I build <span className="text-primary font-medium">clean</span> and <span className="text-primary font-medium">creative</span> projects.
+
+              <p className="text-xl text-muted-foreground max-w-[600px] leading-relaxed">
+                I'm <span className="font-semibold text-foreground">Samir Gaihre</span> (xSamir). I build high-performance, accessible, and beautiful web applications using modern technologies.
               </p>
+
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                <Link
+                  href="/projects"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-foreground px-8 text-sm font-medium text-background shadow transition-transform hover:scale-105 hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-transform hover:scale-105 hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Contact Me
+                </Link>
+              </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <Link
-                href="/projects"
-                className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              >
-                View Projects <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex h-12 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              >
-                Contact Me
-              </Link>
+            {/* Visual/Profile Area */}
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in relative">
+              <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
+                {/* Decorative Elements */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-[2rem] rotate-6 opacity-20 blur-2xl"></div>
+                <div className="absolute -inset-4 border border-primary/20 rounded-[2.5rem] rotate-3"></div>
+
+                {/* Main Image Container */}
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden border border-border/50 shadow-2xl bg-background/50 backdrop-blur-sm">
+                  <Image
+                    src="/assets/SamirIcon.jpg"
+                    alt="Samir Gaihre"
+                    fill
+                    className="object-cover transition-transform duration-700 hover:scale-110"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+
+                  {/* Floating Badge */}
+                  <div className="absolute bottom-6 left-6 right-6 p-4 bg-background/80 backdrop-blur-md rounded-xl border border-white/10 shadow-lg transform translate-y-2 opacity-0 animate-reveal" style={{ animationDelay: "0.5s" }}>
+                    <div className="flex items-center gap-3">
+                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
+                        <Download className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Role</p>
+                        <p className="text-sm font-bold">Full Stack Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
