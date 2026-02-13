@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1",
+        "title": "Quantum Task Manager",
+        "description": "A collaborative task management tool with real-time updates, AI-suggested prioritization, and infinite nesting.",
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind",
+            "Supabase"
+        ],
+        "image": "https://placehold.co/600x400/0f172a/0ea5e9?text=Quantum+Task",
+        "demo": "https://example.com",
+        "repo": "https://github.com/sg61x/project1",
+        "featured": true
+    },
+    {
+        "id": "2",
+        "title": "Neon Commerce",
+        "description": "Headless E-commerce storefront built for speed and SEO. Features optimistic UI and cart synchronization.",
+        "tech": [
+            "React",
+            "Node.js",
+            "Stripe",
+            "Redis"
+        ],
+        "image": "https://placehold.co/600x400/1e293b/38bdf8?text=Neon+Commerce",
+        "demo": "https://example.com",
+        "repo": "https://github.com/sg61x/project2",
+        "featured": true
+    },
+    {
+        "id": "3",
+        "title": "DevSocial Platform",
+        "description": "Social network for developers to share code snippets and collaborate. Includes syntax highlighting and versioning.",
+        "tech": [
+            "Next.js",
+            "Prisma",
+            "PostgreSQL",
+            "Socket.io"
+        ],
+        "image": "https://placehold.co/600x400/334155/94a3b8?text=DevSocial",
+        "demo": "https://example.com",
+        "repo": "https://github.com/sg61x/project3",
+        "featured": false
+    },
+    {
+        "id": "4",
+        "title": "CryptoDash",
+        "description": "Real-time cryptocurrency dashboard tracking top 100 coins with historical data charts and market analysis.",
+        "tech": [
+            "React",
+            "Chart.js",
+            "CoinGecko API"
+        ],
+        "image": "https://placehold.co/600x400/0f172a/10b981?text=CryptoDash",
+        "demo": "https://example.com",
+        "repo": "https://github.com/sg61x/project4",
+        "featured": false
+    }
+]
