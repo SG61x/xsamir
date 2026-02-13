@@ -24,7 +24,7 @@ export default function Home() {
         <div className="container relative z-10 px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Text Content */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:space-y-8 order-2 lg:order-1 animate-slide-up">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:space-y-8 order-1 lg:order-1 animate-slide-up">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-md">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
                 Available for new projects
@@ -32,11 +32,11 @@ export default function Home() {
 
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight">
                 Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Digital</span> <br className="hidden lg:block" />
-                Experiences
+                Ecosystems
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-[500px] lg:max-w-[600px] leading-relaxed">
-                I'm <span className="font-semibold text-foreground">Samir Gaihre</span> (xSamir). I build high-performance, accessible, and beautiful web applications using modern technologies.
+                I'm <span className="font-semibold text-foreground">Samir Gaihre</span> (xSamir). I specialize in Automation, Web Infrastructure, and building efficient digital solutions.
               </p>
 
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
@@ -56,8 +56,8 @@ export default function Home() {
             </div>
 
             {/* Visual/Profile Area */}
-            <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in relative mb-8 lg:mb-0">
-              <div className="relative w-[240px] h-[240px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px]">
+            <div className="flex justify-center lg:justify-end order-2 lg:order-2 animate-fade-in relative mb-8 lg:mb-0">
+              <div className="relative w-[180px] h-[180px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px]">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-[2rem] rotate-6 opacity-20 blur-2xl"></div>
                 <div className="absolute -inset-4 border border-primary/20 rounded-[2.5rem] rotate-3"></div>
@@ -106,11 +106,10 @@ export default function Home() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter">Technical Expertise</h2>
             <p className="text-muted-foreground text-lg">
-              I focus on practical solutions, modern UI, and solid engineering.
-              My toolkit allows me to bring creative ideas to life efficiently.
+              From building complex Telegram bots to optimizing high-traffic web infrastructure, I deliver precision and performance.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
-              {["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Database Design"].map((skill) => (
+              {["Telegram Bots", "Python", "Cloudflare", "CDN Management", "WordPress", "PHP/HTML5"].map((skill) => (
                 <span key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-md text-sm">
                   {skill}
                 </span>
@@ -130,8 +129,8 @@ export default function Home() {
               <div className="bg-primary/20 rounded-lg h-full w-full animate-pulse" style={{ animationDelay: "1.5s" }}></div>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-2xl font-bold bg-background/80 backdrop-blur-sm px-6 py-3 rounded-xl border border-border shadow-lg">
-                System Architecture
+              <span className="text-xl md:text-2xl font-bold bg-background/80 backdrop-blur-sm px-6 py-3 rounded-xl border border-border shadow-lg text-center">
+                Automation & <br /> Infrastructure
               </span>
             </div>
           </div>
